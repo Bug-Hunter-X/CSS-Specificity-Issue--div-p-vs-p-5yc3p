@@ -1,0 +1,13 @@
+The following CSS code has an uncommon error related to the specificity of selectors:
+
+```css
+div p {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+```
+
+The `p` selector is more specific than the `div p` selector. Therefore, the `color: red;` declaration will override the `color: blue;` declaration, resulting in all paragraphs having red text, even if they are inside a `div` element.
