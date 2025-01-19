@@ -1,0 +1,13 @@
+The following CSS code demonstrates the solution:
+
+```css
+div p {
+  color: blue !important;
+}
+
+p {
+  color: red;
+}
+```
+
+By using `!important`, we ensure that the `color: blue;` declaration for paragraphs within a `div` element takes precedence over the `color: red;` declaration for all paragraphs.  While generally it's recommended to avoid `!important`, in cases like this where you need explicit overriding in exceptional situations it is a viable choice.
